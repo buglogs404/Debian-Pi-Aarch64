@@ -31,7 +31,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/setup-go@v1
       - run: 
-              "Run Build" ;
+              echo "Run Build"
   deploy:
       # Runs a single command using the runners shell
       - name: X-Code
