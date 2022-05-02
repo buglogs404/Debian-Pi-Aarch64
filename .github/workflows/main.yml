@@ -25,13 +25,13 @@ jobs:
     env:
         NUM_JOBS: 50
         JOB: ${{ matrix.go }}
-
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Set up Go ${{ matrix.go }}
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/setup-go@v1
+      - run: 
+              "Run Build" ;
   deploy:
       # Runs a single command using the runners shell
       - name: X-Code
